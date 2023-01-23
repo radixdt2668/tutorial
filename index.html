@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tutorials</title>
+    <style>
+        html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.fa-brands {
+  display: flex;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  cursor: pointer;
+  display: inline-block ;
+}
+.container{
+  max-width: 1280px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+.text-center{
+    text-align: center;
+}
+.bg-topic{
+    background-color: #F0EFEF;
+    padding: 27px 27px;
+}
+.text-primory{
+    color: #414141;
+}
+.text-secondary{
+    color: #FF0000;
+}
+.text-head{
+    color: #1D1D1D;
+}
+.text-white{
+    color: white;
+}
+.text-yellow{
+    color: #FBA333;
+}
+.text-dark-blue{
+    color: #130085;
+}
+.bg-orange{
+    background-color: #FB6050;
+}
+.bg-yello{
+    background-color: #FBA333;
+}
+mark{
+    background-color: #FF1B1B;
+}
+.bg-blue{
+    background-color: #3092F9;
+}
+.bg-green{
+    background-color: #45B375;
+}
+.pad-t-b{
+    padding: 30px 0 40px 0;
+}
+.fs-48{
+    font-size: 48px;
+    line-height: 55px;
+}
+.fs-42{
+    font-size: 42px;
+    line-height: 48px;
+}
+.fs-30{
+    font-size: 30px;
+    line-height: 35px;
+}
+.fs-40{
+    font-size: 40px;
+}
+.fs-20{
+    font-size: 20px;
+    line-height: 28px;
+}
+.fs-36{
+    font-size: 36px;
+    line-height: 41px;
+}
+.fs-28{
+    font-size: 28px;
+    line-height: 32px;
+}
+.fs-24{
+    font-size: 24px;
+    line-height: 28px;
+}
+.fs-16{
+    font-size: 16px;
+    line-height: 18px;
+}
+.fs-10{
+    font-size: 10px;
+}
+.fs-18{
+    font-size: 18px;
+}
+.fw-7{
+    font-weight: 700;
+}
+.fw-4{
+    font-weight: 400;
+}
+.first-heading{
+    max-width: 1092px;
+    margin-left: 43px;
+    border-bottom: 1px solid #D1D1D1;
+}
+.d-block{
+    display: block;
+}
+.ob-fit{
+    object-fit: cover;
+}
+.d-flex{
+    display: flex;
+}
+.align-item{
+    align-items: center;
+}
+span{
+    margin-right: 40px;
+}
+.mb-11{
+    margin-bottom: 11px;
+}
+.mb-16{
+    margin-bottom: 16px;
+}
+.mb-34{
+    margin-bottom: 34px;
+}
+.mb-21{
+    margin-bottom: 21px;
+}
+.pb-29{
+    padding-bottom: 29px;
+}
+.bdr-bm{
+    border-bottom: 1px solid black;
+}
+.italic{
+    font-style: italic;
+}
+.td-ul{
+    text-decoration: underline;
+}
+.d-11 {
+    /* max-width: 612px; */
+    width: 100%;
+}
+.d-11 p{
+    max-width: 61%;
+    padding: 12px 16px;
+}
+.d-11 .p-yl{
+    max-width: 81%;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.d-14{
+    padding: 18px 27px;
+    border: 1px solid #FF0202;
+    color: #FF1212;
+}
+.d-14-2{
+    padding: 18px 27px;
+    border: 1px solid #FBA333;
+}
+ul li , ol li {
+    padding: 10px 0;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container text-center bg-topic">
+            <a href="#" class="fw-7 fs-48 text-secondary">HTML TUTORIAL</a>
+        </div>
+    </header>
+    <!-- start  -->
+    <div class="container">
+    <div class="first-heading pad-t-b d-flex">
+        <div class="number">
+        <span class="fs-30 fw-7">1)</span>              
+        </div>
+        <div class="discription">
+            <h1 class="fs-42 fw-7 text-head mb-11">My First Heading</h1>
+            <p class="text-primory fs-20 fw-4">My First Paragraph</p> 
+        </div>   
+    </div>
+    <div class="first-heading pad-t-b d-flex">
+        <div class="number">
+        <span class="fs-30 fw-7">2)</span>
+        </div>
+        <div class="discription">
+            <h1 class="fs-48 fw-4 text-head mb-21 ">This is heading 1</h1>
+            <h2 class="text-head mb-21 fw-4 fs-36">This is heading 2</h2>
+            <h3 class="text-head mb-21 fw-4 fs-28">This is heading 2</h3>
+            <h4 class="text-head mb-21 fw-4 fs-24">This is heading 2</h4>
+            <h5 class="text-head mb-21 fw-4 fs-20">This is heading 2</h5>
+            <h6 class="text-head mb-21 fw-4 fs-16">This is heading 2</h6>
+        </div>
+    </div>
+    <div class="first-heading d-flex pad-t-b align-item">
+        <div class="number">
+        <span class="fs-30 fw-7">3)</span>
+        </div>
+        <div class="discription">
+            <a href="#" class="text-head fs-20 fw-4">WWW.onprintshop.com</a>
+        </div>
+    </div>
+    <div class="first-heading d-flex pad-t-b">
+        <div class="number">
+        <span class="fs-30 fw-7">4)</span>        
+</div>
+<div class="discription">
+    <p class="text-primory fs-20 fw-4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem. <br>
+        Nemo enim ipsam voluptatem.</p>
+</div> 
+   </div>
+    <div class="first-heading d-flex pad-t-b">
+        <div class="number">
+        <span class="fs-30 fw-7">5)</span>        
+</div>
+<div class="discription">
+    <p class="text-primory fs-20 fw-4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem. <br>
+        <span class="text-secondary">
+         Nemo enim ipsam voluptatem.
+        </span></p>
+</div> 
+   </div>
+    <div class="first-heading d-flex pad-t-b">
+        <div class="number">
+        <span class="fs-30 fw-7">6)</span>
+</div>
+<div class="discription">
+    <img src="images/room.png" height="172" width="425" class="d-block ob-fit " alt="room-image">
+</div> 
+   </div>
+    <div class="first-heading d-flex pad-t-b">
+        <div class="number">
+        <span class="fs-30 fw-7">7)</span>
+</div>
+<div class="discription">
+    <p class="fs-20 fw-4 text-primory">This is <br>
+        a paragraph <br>
+        with line breaks.</p>
+</div> 
+   </div>
+    <div class="first-heading d-flex pad-t-b">
+        <div class="number">
+        <span class="fs-30 fw-7">8)</span>
+</div>
+<div class="discription">
+    <h2 class="fs-40 text-primory fw-4 mb-21">This is heading 1</h2>
+    <P class="text-primory fs-16 fw-4 pb-29 bdr-bm ">Lorem ipsum dolor sit amet</P>
+    <div class="pad-t-b">
+    <h2 class="fs-40 text-primory fw-4 mb-21 ">This is heading 1</h2>
+    <P class="text-primory fs-16 fw-4 ">Lorem ipsum dolor sit amet</P>
+    </div>
+</div> 
+   </div>
+    <div class="first-heading d-flex pad-t-b">
+        <div class="number">
+        <span class="fs-30 fw-7">9)</span>
+</div>
+<div class="discription">
+    <p class="fs-16 fw-4 text-head mb-16">Lorem ipsum dolor sit amet</p>
+    <p class="fs-16 fw-4 text-secondary mb-16">Lorem ipsum dolor sit amet</p>
+    <p class="fs-16 fw-4 text-dark-blue mb-34">Lorem ipsum dolor sit amet</p>
+    <h3 class="fs-40 fw-4">Lorem ipsum </h3>
+</div> 
+   </div>
+    <div class="first-heading d-flex pad-t-b">
+        <div class="number">
+        <span class="fs-30 fw-7">10)</span>
+            </div>
+        <div class="discription">
+            <p class="fs-20 fw-7 mb-11 text-head">Sed ut perspiciatis unde omnis</p>
+            <p class="fs-20 fw-4 mb-11 text-head italic">iste natus error sit voluptatem</p>
+            <p class="fs-20 fw-4 text-head mb-11">qui <sub>dolorem</sub> ipsum quia <sup>dolor</sup> </p>
+            <p class="fs-10 text-head fw-4 mb-11">iste natus error sit voluptatem.</p>
+            <p class="fs-18 text-head fw-4 mb-11">iste natus error sit <mark>voluptatem.</mark> </p>
+            <p class="fs-18 text-head fw-4 mb-11">iste natus <del>error sit</del> voluptatem.</p>
+            <p class="fs-18 text-head fw-4 mb-11">iste natus <del>error sit</del>  <span class="td-ul">voluptatem.</span></p>
+            <p class="fs-18 text-head fw-4 mb-11">iste natus <sub>error sit </sub> voluptatem.</p>
+            <address class="fs-20 fw-4 " style="font-style: normal;">
+                Ekyarth, B/H Nirma University, chharodi, <br>
+                 Ahmedabad-382481, India.
+                </address>
+        </div>
+    </div>
+    <div class="first-heading d-flex pad-t-b">
+        <div class="number">
+        <span class="fs-30 fw-7">11)</span>
+            </div>
+        <div class="discription d-11">
+            <p class="fs-18 text-white fw-7 bg-orange mb-20">Lorem ipsum</p>
+            <p class="fs-18 text-white fw-7 bg-yello mb-20">Lorem ipsum</p>
+            <p class="fs-18 text-white fw-7 bg-blue mb-20">Lorem ipsum</p>
+            <p class="fs-18 text-white fw-7 bg-green mb-20">Lorem ipsum</p>
+        </div>
+    </div>
+    <div class="first-heading d-flex pad-t-b">
+        <div class="number">
+        <span class="fs-30 fw-7">12)</span>
+            </div>
+            <div class="discription d-11">
+                <p class="fs-18 text-white fw-7 bg-orange mb-20">Lorem ipsum</p>
+                <p class="fs-18 text-white p-yl fw-7 bg-yello mb-20">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            </div>
+    </div>
+    <div class="first-heading d-flex pad-t-b">
+        <div class="number">
+        <span class="fs-30 fw-7">13)</span>
+            </div>
+        <div class="discription">
+            <p class="fs-20 fw-7 mb-11 text-secondary"> Hello World</p>
+            <p class="fs-20 fw-4 mb-11 text-yellow">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt <br> 
+                laoreet dolore magna aliquam erat volutpat.
+                </p>
+                <p class="fs-20 fw-4 mb-11 text-dark-blue">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip <br>
+                     ex ea commodo consequat.</p>    
+        </div>
+
+    </div>
+    <div class="first-heading d-flex pad-t-b">
+        <div class="number">
+        <span class="fs-30 fw-7">14)</span>
+            </div>
+        <div class="discription">
+            <p class="fs-20 text-secondary fw-7 d-14 mb-11"> Lorem Ipsum</p>
+            <p class="fs-20  fw-7 d-14-2 text-yellow mb-11"> Lorem Ipsum</p>
+
+        </div>
+
+    </div>
+    <div class="first-heading d-flex pad-t-b">
+        <div class="number">
+        <span class="fs-30 fw-7">15)</span>
+            </div>
+        <div class="discription  d-flex" style="width: 30%; justify-content: space-between;">
+            <ul>
+                <li class="fs-24 fw-4 text-primory">Red</li>
+                <li class="fs-24 fw-4 text-primory">Yellow</li>
+                <li class="fs-24 fw-4 text-primory">Green</li>
+            </ul>
+            <ol>
+                <li class="fs-24 fw-4 text-primory">Orange</li>
+                <li class="fs-24 fw-4 text-primory">Orange</li>
+                <li class="fs-24 fw-4 text-primory">Orange</li>
+            </ol>
+        </div>
+
+    </div>
+    <div class="first-heading d-flex pad-t-b">
+        <div class="number">
+        <span class="fs-30 fw-7">16)</span>
+            </div>
+        <div class="discription">
+            <!-- <dt>Lorem ipsum</dt> -->
+            <dl class="fs-20 fw-4 text-primory mb-34">
+                <dt>Lorem ipsum</dt>
+                <dl>- Sed ut perspiciatis unde omnis</dl>
+            </dl>
+            <dl class="fs-20 fw-4 text-primory">
+                <dt>Lorem ipsum</dt>
+                <dl>- Sed ut perspiciatis unde omnis</dl>
+            </dl>
+        </div>
+
+    </div>
+    <div class="first-heading d-flex pad-t-b">
+        <div class="number">
+        <span class="fs-30 fw-7">17)</span>
+            </div>
+        <div class="discription" >
+            <p class="fs-20  fw-4 text-primory mb-11" style="width: 68%; padding: 8px 10px; border: 1px solid black;"> Lorem ipsum </p>
+            <p class="fs-20  fw-4 text-primory"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt  <br>
+                laoreet dolore magna aliquam erat volutpat.
+                </p>
+        </div>
+
+    </div>
+    <div class="first-heading d-flex pad-t-b">
+        <div class="number">
+        <span class="fs-30 fw-7">18)</span>
+            </div>
+        <div class="discription" style="width: 87%;">
+            <p style="padding: 20px 20px 30px 20px;" class="bg-orange text-white fs-20 fw-4  "> Lorem ipsum
+            </p>
+            <p style="padding: 20px 20px 30px 20px;" class="bg-orange text-white fs-20 fw-4 mb-20  "> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt 
+                laoreet dolore magna aliquam erat volutpat.                
+            </p>
+            <p style="padding: 20px 20px 30px 20px;" class="bg-blue text-white fs-20 fw-4  "> Lorem ipsum
+            </p>
+            <p style="padding: 20px 20px 30px 20px;" class="bg-blue text-white fs-20 fw-4  "> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt 
+                laoreet dolore magna aliquam erat volutpat.                
+            </p>
+        </div>
+    </div>
+    <div class="first-heading d-flex pad-t-b">
+        <div class="number">
+        <span class="fs-30 fw-7">19)</span>
+            </div>
+        <div class="discription" style="width: 87%; background-color:#E6E6E6;">
+            <h1 class="text-primory text-center fs-40 fw-4" style="padding: 24px 0;">Lorem ipsum</h1>
+            <div class="d-flex">
+                <aside class="d-flex" style="padding: 50px; background-color: #DBD8D8; justify-content: space-between; width: 35%; align-items: center;">
+                    <ul class="fs-20 fw-4">
+                        <li>Yellow</li>
+                        <li>Purple</li>
+                        <li>Violet</li>
+                    </ul>
+                    <ul class="fs-20 fw-4">
+                        <li>Yellow</li>
+                        <li>Purple</li>
+                        <li>Violet</li>
+                    </ul>
+
+                </aside>
+                <article class="" style="padding: 46px; background-color:#D4D4D4; width: 65%;  text-align: start;">
+                    <p class=" mb-34 fs-20 fw-4">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                        laoreet dolore magna aliquam erat volutpat.
+                    </p>
+                    <p class="fs-20 fw-4">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                        sed diam nonummy nibh euismod tincidunt.
+                    </p>
+                </article>
+                
+            </div>
+            <footer class="d-flex align-item " style="background-color: #E6E6E6; padding: 20px 30px; justify-content: space-between;">
+                <p class="fs-20 fw-4 text-primory">Lorem ipsum</p>
+                <p class="fs-20 fw-4 text-primory">www.loremipsum.com</p>
+            </footer>
+            
+        </div>
+
+    </div>
+    <div class="first-heading d-flex pad-t-b">
+        <div class="number">
+        <span class="fs-30 fw-7">20)</span>
+            </div>
+        <div class="discription" style="font-style: ;normal">
+            <p class="fs-20 text-primory fw-4">Some Programming code: <br>
+                   <var>x</var> = 5; <var>y</var> = 6 ;  <var>z</var> = <var>x</var>+<var>y</var> </p>
+        </div>
+
+    </div>   
+</div>
+
+<!-- <script>
+    #include <stdio.h>
+int main() {    
+
+    int number1, number2, sum;
+    
+    printf("Enter two integers: ");
+    scanf("%d %d",  number1,  number2);
+ 
+    // calculating sum
+    sum = number1 + number2;      
+    
+    printf("%d + %d = %d", number1, number2, sum);
+    return 0;
+}
+</script> -->
+
+    
+</body>
+</html>
