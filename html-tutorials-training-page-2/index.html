@@ -58,7 +58,6 @@ fieldset,
 form,
 label,
 legend,
-table,
 caption,
 tbody,
 tfoot,
@@ -124,10 +123,7 @@ q:before,
 q:after {
   content: "";
 }
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
+
 a {
   cursor: pointer;
   display: inline-block ;
@@ -274,7 +270,6 @@ span{
     text-decoration: underline;
 }
 .d-11 {
-    /* max-width: 612px; */
     width: 100%;
 }
 .d-11 p{
@@ -311,8 +306,39 @@ ul{
     color: #414141;
     margin: 0 80px 0 0;
 }
-table, th, td {
+tr,td,th{
   border:1px solid black;
+}
+th{
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 700;
+}
+td{
+    font-size: 14px;
+    font-weight: 700;
+    padding: 5px;
+}
+label{
+    font-size: 18px;
+    font-weight: 700;
+    display: inline-block;
+    width: 40%;
+}
+input[type=text],[type=email],[type=date-time],[type=file],[type=password],[type=datetime-local],[type=tel],[type=date]{
+    width: 50%;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #D7D7D7;
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #DADADA;
+}
+select{
+    height: 44px;
+    width: 50%;
+    border: 1px solid #D7D7D7 ;
+    margin-bottom: 15px;
 }
     </style>
 </head>
@@ -357,7 +383,7 @@ table, th, td {
                 </div>
                 <div class="discription">
                     <audio controls="" preload="none">
-                        <source src="C:\Users\dharmesh.patel\Downloads\audio.mp3" type="audio/mpeg"> 
+                        <source src="" type="audio/mpeg"> 
                     </audio>                    
                 </div>   
             </div>
@@ -380,9 +406,8 @@ table, th, td {
             <div class="first-heading pad-t-b d-flex">
                 <div class="number">
                 <span class="fs-30 fw-7">4)</span>              
-                </div>
-                
-                    <table  border="1">
+                </div>                
+                    <table  border="1" cellspacing="10"  class="w-100">
                         <tr>
                           <th>Company</th>
                           <th>Contact</th>
@@ -398,11 +423,70 @@ table, th, td {
                           <td>Francisco Chang</td>
                           <td>Mexico</td>
                         </tr>
-                      </table>
-                  
+                      </table>                  
             </div>
+            <div class="first-heading pad-t-b d-flex">
+                <div class="number">
+                <span class="fs-30 fw-7">6)</span>              
+                </div>
+                <div class="discription ">
+                    <form action="index.html">
+                        <label for="fname">First name:</label>
+                        <input type="text"  id="fname" name="fname" value="" placeholder="First name"><br>
+                        <label for="mname">Middle name:</label>
+                        <input type="text" id="mname" name="mname" value="" placeholder="Middle name"><br>
+                        <label for="Lname">Last name:</label>
+                        <input type="text" id="Lname" name="Lname" value="" placeholder="Last name"><br>
+                        <label for="Lname">Email Id:</label>
+                        <input type="email" id="email" name="email" placeholder="Email Id" ><br>
+                        <label for="mobile-num">Mobile Number:</label>
+                        <input type="tel" id="tel" name="tel" placeholder="Mobile Number" ><br>
+                        <label for="date">Date:</label>
+                        <input type="date"><br>
+                        <label for="date-time">Date & Time:</label>
+                        <input type="datetime-local"><br>
+                        <label for="gender" class="mb-20">Gender:</label>
+                        <input type="radio" id="male" name="gender-name" value="male">Male
+                        <input type="radio" id="female" name="gender-name" value="female">Female<br>
+                        <label for="select-city">Select City:</label>
+                        <select name="select-city" id="select-city" class="fs-18">
+                            <option class="fs-18" value="city-1">--Select City--</option>
+                            <option class="fs-18" value="city-1">Bharuch</option>
+                            <option class="fs-18" value="city-2">Surat</option>
+                            <option class="fs-18" value="city-3">Baroda</option>
+                            <option class="fs-18" value="city-4">Ahmedabad</option>
+                        </select><br>
+                        <label for="languages" class="mb-20">Languages:</label>                        
+                        <input type="radio" name="english" id="english">English
+                        <input type="radio" name="guj" id="guj">Gujarati
+                        <input type="radio" name="hindi" id="hindi">Hindi                        
+                        <br>
+                        <label for="folder" >Folder:</label>
+                        <input type="file" id="myfile" name="myfile"><br>
+                        <label for="pwd">Password:</label>
+                        <input type="password" id="pwd" name="pwd"><br>
+                        <label for="color" class="mb-20">Color:</label>
+                        <input type="color" id="color" name="color" style="border: 1px solid red; height: 50px; width: 100px; "> <br>
+                        <label for="range">Range:</label>
+                        <input type="range" id="range" name="range" class="mb-20"><br>
+                        <input type="submit" class="fs-18" id="submit" value="Submit" style="width: 99px; height: 44px; color: white; background-color: black; cursor: pointer; ">
+                        <input type="reset" class="fs-18" id="reset" value="reset" style="width: 99px; height: 44px; color: white; background-color: black; cursor: pointer; ">
+                    </form>                    
+                </div>   
 
-
-
-
+            </div>
+            <div class="first-heading pad-t-b d-flex">
+                <div class="number">
+                <span class="fs-30 fw-7">7)</span>              
+                </div>
+                <div class="discription w-100 ">
+                    <table border="1" cellspacing="10"  class="text-center w-100">
+                        <tr>
+                            <th>Company</th>
+                            <th>Contact</th>
+                            <th>Country</th>
+                        </tr>
+                    </table>
+                    </div>
+                    </div>
             </div>
