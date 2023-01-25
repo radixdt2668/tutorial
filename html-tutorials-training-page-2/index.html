@@ -299,7 +299,7 @@ ul li , ol li {
 .w-100{
     width: 100%;
 }
-ul{
+ul,ol{
     font-size: 24PX;
     font-weight: 400;
     color: #414141;
@@ -331,7 +331,18 @@ input[type=text],[type=email],[type=date-time],[type=file],[type=password],[type
     border: 1px solid #D7D7D7;
     font-size: 18px;
     margin-bottom: 15px;
+}
+::placeholder{
     color: #DADADA;
+}
+.text-dadada{
+    color: #DADADA;
+}
+.text-ad{
+    color: #adadad;
+}
+.bg-da{
+    background-color: #DADADA;
 }
 select{
     height: 44px;
@@ -354,22 +365,22 @@ select{
             <span class="fs-30 fw-7">1)</span>              
             </div>
             <div class="discription d-flex  w-100">
-                <ul class="ul" style="list-style: upper-alpha;">
-                    <li>Red</li>
+                <ol class="ul" type="A">
+                    <li >Red</li>
                     <li>Yellow</li>
                     <li>Green</li>
-                </ul>
-                <ul class="ul" style="list-style: upper-roman ;"> 
+                </ol>
+                <ul class="ul" type="I" style="list-style: upper-roman ;"> 
                     <li>Orange</li>
                     <li>Pink</li>
                     <li>Purple</li>
                 </ul>
-                <ul class="ul" style="list-style: square;">
+                <ul class="ul" type="square" style="list-style: square;">
                     <li>Orange</li>
                     <li>Pink</li>
                     <li>Purple</li>
                 </ul>
-                <ul class="ul" style="list-style: disc;">
+                <ul class="ul" type="disc" >
                     <li>Orange</li>
                     <li>Pink</li>
                     <li>Purple</li>
@@ -381,9 +392,10 @@ select{
                 <span class="fs-30 fw-7">2)</span>              
                 </div>
                 <div class="discription">
-                    <audio controls="" preload="none">
-                        <source src="" type="audio/mpeg"> 
-                    </audio>                    
+                    <audio controls="" preload="none"
+                        controls
+                        src="audio/audio.mp3">
+                    </audio>                                        
                 </div>   
             </div>
             <div class="first-heading pad-t-b d-flex">
@@ -391,7 +403,9 @@ select{
                 <span class="fs-30 fw-7">3)</span>              
                 </div>
                 <div class="discription">
-                    <iframe width="317" height="235" src="https://www.youtube.com/embed/5oH9Nr3bKfw" title="Tom & Jerry | A Bit of Fresh Air! | Classic Cartoon Compilation | @WB Kids" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                 
+                    <video src="" controls height="235" width="320" >
+                        <source src="audio/movie.mp4">
+                    </video>
                 </div>   
             </div>
             <div class="first-heading pad-t-b d-flex">
@@ -406,7 +420,7 @@ select{
                 <div class="number">
                 <span class="fs-30 fw-7">4)</span>              
                 </div>                
-                    <table  border="1" cellspacing="10"  class="w-100">
+                    <table  border="1" cellspacing="10"  width="100%">
                         <tr>
                           <th>Company</th>
                           <th>Contact</th>
@@ -439,16 +453,16 @@ select{
                         <label for="Lname">Email Id:</label>
                         <input type="email" id="email" name="email" placeholder="Email Id" ><br>
                         <label for="mobile-num">Mobile Number:</label>
-                        <input type="tel" id="tel" name="tel" placeholder="Mobile Number" ><br>
+                        <input type="tel"  id="tel" name="tel" placeholder="Mobile Number" ><br>
                         <label for="date">Date:</label>
                         <input type="date"><br>
                         <label for="date-time">Date & Time:</label>
                         <input type="datetime-local"><br>
                         <label for="gender" class="mb-20">Gender:</label>
-                        <input type="radio" id="male" name="gender-name" value="male">Male
-                        <input type="radio" id="female" name="gender-name" value="female">Female<br>
+                        <input type="radio" id="male" name="gender-name" value="male"><span class="text-dadada">Male</span>
+                        <input type="radio" id="female" name="gender-name" value="female"><span class="text-dadada">Female</span><br>
                         <label for="select-city">Select City:</label>
-                        <select name="select-city" id="select-city" class="fs-18">
+                        <select name="select-city" id="select-city" class="fs-18 bg-da">
                             <option class="fs-18" value="city-1">--Select City--</option>
                             <option class="fs-18" value="city-1">Bharuch</option>
                             <option class="fs-18" value="city-2">Surat</option>
@@ -456,12 +470,12 @@ select{
                             <option class="fs-18" value="city-4">Ahmedabad</option>
                         </select><br>
                         <label for="languages" class="mb-20">Languages:</label>                        
-                        <input type="radio" name="english" id="english">English
-                        <input type="radio" name="guj" id="guj">Gujarati
-                        <input type="radio" name="hindi" id="hindi">Hindi                        
+                        <input type="checkbox" value="english" name="english" id="english">English
+                        <input type="checkbox" value="guj" name="guj" id="guj">Gujarati
+                        <input type="checkbox" value="hindi" name="hindi" id="hindi">Hindi                        
                         <br>
                         <label for="folder" >Folder:</label>
-                        <input type="file" id="myfile" name="myfile"><br>
+                        <input type="file" class="text-dadada bg-da" id="myfile" name="myfile" style="border: ;none"><br>
                         <label for="pwd">Password:</label>
                         <input type="password" id="pwd" name="pwd"><br>
                         <label for="color" class="mb-20">Color:</label>
