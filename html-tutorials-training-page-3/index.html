@@ -1,484 +1,602 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>tutorial-page-3</title>
-     <!-- font-awesom -->
-     <link
-     rel="stylesheet"
-     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-     crossorigin="anonymous"
-     referrerpolicy="no-referrer"
-   />
+    <!-- font-awesom -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <style>
-        body{
-            margin: 0;
-            padding: 0;
-        }
-        .justify-content-between{
-    justify-content: space-between;
-}
-.justify-content-around{
-    justify-content: space-around;
-}
-.justify-content-center{
-    justify-content: center;
-}
-.w-100{
-    width: 100%;
-}
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-li,
-fieldset,
-form,
-label,
-legend,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-ul{
-    margin: 0;
-    padding: 0;
-}
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-* {
-  box-sizing: border-box;
-}
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-.fa-brands {
-  display: flex;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-}
-a {
-  cursor: pointer;
-  /* display: inline-block; */
-  text-decoration: none;
-}
-.text-center{
-    text-align: center;
-}
-.bg-topic{
-    background-color: #F0EFEF;
-    padding: 27px 27px;
-}
-.text-primory{
-    color: #414141;
-}
-.text-secondary{
-    color: #FF0000;
-}
-.text-head{
-    color: #1D1D1D;
-}
-.text-white{
-    color: white;
-}
-.text-yellow{
-    color: #FBA333;
-}
-.text-dark-blue{
-    color: #130085;
-}
-.text-black{
-    color: black;
-}
-.bg-orange{
-    background-color: #FB6050;
-}
-.bg-yello{
-    background-color: #FBA333;
-}
-mark{
-    background-color: #f34925;
-}
-.bg-blue{
-    background-color: #3092F9;
-}
-.text-sky-blue{
-    color: #3092F9;
-}
-.bg-green{
-    background-color: #45B375;
-}
-.pad-t-b{
-    padding: 25px 0 25px 0;
-}
-.fs-48{
-    font-size: 48px;
-    line-height: 55px;
-}
-.fs-42{
-    font-size: 42px;
-    line-height: 48px;
-}
-.fs-30{
-    font-size: 30px;
-    line-height: 35px;
-}
-.fs-40{
-    font-size: 40px;
-}
-.fs-20{
-    font-size: 20px;
-    line-height: 28px;
-}
-.fs-36{
-    font-size: 36px;
-    line-height: 41px;
-}
-.fs-28{
-    font-size: 28px;
-    line-height: 32px;
-}
-.fs-24{
-    font-size: 24px;
-    line-height: 28px;
-}
-.fs-16{
-    font-size: 16px;
-    line-height: 18px;
-}
-.fs-18{
-    font-size: 18px;
-    line-height: 26px;
-}
-.fw-7{
-    font-weight: 700;
-}
-.fw-4{
-    font-weight: 400;
-}
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .justify-content-between {
+        justify-content: space-between;
+      }
+      .justify-content-around {
+        justify-content: space-around;
+      }
+      .justify-content-center {
+        justify-content: center;
+      }
+      .w-100 {
+        width: 100%;
+      }
+      html,
+      body,
+      div,
+      span,
+      applet,
+      object,
+      iframe,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      blockquote,
+      pre,
+      a,
+      abbr,
+      acronym,
+      address,
+      big,
+      cite,
+      code,
+      del,
+      dfn,
+      em,
+      img,
+      ins,
+      kbd,
+      q,
+      s,
+      samp,
+      small,
+      strike,
+      strong,
+      sub,
+      sup,
+      tt,
+      var,
+      b,
+      u,
+      i,
+      center,
+      dl,
+      dt,
+      dd,
+      ol,
+      li,
+      fieldset,
+      form,
+      label,
+      legend,
+      caption,
+      tbody,
+      tfoot,
+      thead,
+      tr,
+      th,
+      td,
+      article,
+      aside,
+      canvas,
+      details,
+      embed,
+      figure,
+      figcaption,
+      footer,
+      header,
+      hgroup,
+      menu,
+      nav,
+      output,
+      ruby,
+      section,
+      summary,
+      time,
+      mark,
+      audio,
+      video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+      article,
+      aside,
+      details,
+      figcaption,
+      figure,
+      footer,
+      header,
+      hgroup,
+      menu,
+      nav,
+      section {
+        display: block;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .fa-brands {
+        display: flex;
+      }
+      blockquote,
+      q {
+        quotes: none;
+      }
+      blockquote:before,
+      blockquote:after,
+      q:before,
+      q:after {
+        content: "";
+      }
+      a {
+        cursor: pointer;
+        /* display: inline-block; */
+        text-decoration: none;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .bg-topic {
+        background-color: #f0efef;
+        padding: 27px 27px;
+      }
+      .text-primory {
+        color: #414141;
+      }
+      .text-secondary {
+        color: #ff0000;
+      }
+      .text-head {
+        color: #1d1d1d;
+      }
+      .text-white {
+        color: white;
+      }
+      .text-yellow {
+        color: #fba333;
+      }
+      .text-dark-blue {
+        color: #130085;
+      }
+      .text-black {
+        color: black;
+      }
+      .bg-orange {
+        background-color: #fb6050;
+      }
+      .bg-yello {
+        background-color: #fba333;
+      }
+      mark {
+        background-color: #f34925;
+      }
+      .bg-blue {
+        background-color: #3092f9;
+      }
+      .text-sky-blue {
+        color: #3092f9;
+      }
+      .bg-green {
+        background-color: #45b375;
+      }
+      .pad-t-b {
+        padding: 25px 0 25px 0;
+      }
+      .fs-48 {
+        font-size: 48px;
+        line-height: 55px;
+      }
+      .fs-42 {
+        font-size: 42px;
+        line-height: 48px;
+      }
+      .fs-30 {
+        font-size: 30px;
+        line-height: 35px;
+      }
+      .fs-40 {
+        font-size: 40px;
+      }
+      .fs-20 {
+        font-size: 20px;
+        line-height: 28px;
+      }
+      .fs-36 {
+        font-size: 36px;
+        line-height: 41px;
+      }
+      .fs-28 {
+        font-size: 28px;
+        line-height: 32px;
+      }
+      .fs-24 {
+        font-size: 24px;
+        line-height: 28px;
+      }
+      .fs-16 {
+        font-size: 16px;
+        line-height: 18px;
+      }
+      .fs-18 {
+        font-size: 18px;
+        line-height: 26px;
+      }
+      .fw-7 {
+        font-weight: 700;
+      }
+      .fw-4 {
+        font-weight: 400;
+      }
 
-.d-block{
-    display: block;
-}
-.ob-fit{
-    object-fit: cover;
-}
-.d-flex{
-    display: flex;
-}
-.flex-wrap{
-    flex-wrap: wrap;
-}
-.align-item{
-    align-items: center;
-}
+      .d-block {
+        display: block;
+      }
+      .ob-fit {
+        object-fit: cover;
+      }
+      .d-flex {
+        display: flex;
+      }
+      .flex-wrap {
+        flex-wrap: wrap;
+      }
+      .align-item {
+        align-items: center;
+      }
 
-.mb-11{
-    margin-bottom: 11px;
-}
-.mb-16{
-    margin-bottom: 16px;
-}
-.mb-34{
-    margin-bottom: 34px;
-}
-.mb-21{
-    margin-bottom: 21px;
-}
-.pb-29{
-    padding-bottom: 29px;
-}
-.mb-20{
-    margin-bottom: 20px;
-}
-.bdr-bm{
-    border-bottom: 1px solid black;
-}
-.italic{
-    font-style: italic;
-}
-.container{
-    max-width: 1920px;
-    margin: 0 auto;
-    padding-left: 80px;
-    padding-right: 80px;
-}
-header li{
-    list-style: none;
-}
-.col-4 {
-  width: 33.33%;
-}
-.col-3 {
-  width: 25%;
-}
-.col-2 {
-  width: 20%;
-}
-.col-5 {
-  width: 41.6%;
-}
-.col-6 {
-  width: 50%;
-}
-.col-7 {
-  width: 58.33%;
-}
-.col-8 {
-  width: 66.66%;
-}
-.col-9 {
-  width: 75%;
-}
-.col-10 {
-  width: 83.33%;
-}
-.col-11 {
-  width: 91.66%;
-}
-.col-12 {
-  width: 100%;
-}
-.justify-content-end{
-    justify-content: end;
-}
-.w-50{width: 50%;}
-header .col-4 a:hover{
-    color: #FF0000; border-bottom: 1px solid #FF0000;transition: 0.2s;
-}
-.card-main .col-4{
-    width: calc(33.33% - 40px);}
-figure img{
-    object-fit: cover;
-    height: auto;
-    width: 100%;
-    display: block;
-}
-.fa-solid{
-    position: absolute;
-    right: 20px;
-    top: 11px;
-    color: #9B9B9B;
-}
-header .col-6{
-    position: relative;
-}
-
-
+      .mb-11 {
+        margin-bottom: 11px;
+      }
+      .mb-16 {
+        margin-bottom: 16px;
+      }
+      .mb-34 {
+        margin-bottom: 34px;
+      }
+      .mb-21 {
+        margin-bottom: 21px;
+      }
+      .pb-29 {
+        padding-bottom: 29px;
+      }
+      .mb-20 {
+        margin-bottom: 20px;
+      }
+      .bdr-bm {
+        border-bottom: 1px solid black;
+      }
+      .italic {
+        font-style: italic;
+      }
+      .container {
+        max-width: 1920px;
+        margin: 0 auto;
+        padding-left: 80px;
+        padding-right: 80px;
+      }
+      header li {
+        list-style: none;
+      }
+      .col-4 {
+        width: 33.33%;
+      }
+      .col-3 {
+        width: 25%;
+      }
+      .col-2 {
+        width: 20%;
+      }
+      .col-5 {
+        width: 41.6%;
+      }
+      .col-6 {
+        width: 50%;
+      }
+      .col-7 {
+        width: 58.33%;
+      }
+      .col-8 {
+        width: 66.66%;
+      }
+      .col-9 {
+        width: 75%;
+      }
+      .col-10 {
+        width: 83.33%;
+      }
+      .col-11 {
+        width: 91.66%;
+      }
+      .col-12 {
+        width: 100%;
+      }
+      .justify-content-end {
+        justify-content: end;
+      }
+      .w-50 {
+        width: 50%;
+      }
+      header .col-4 a:hover {
+        color: #ff0000;
+        border-bottom: 1px solid #ff0000;
+        transition: 0.2s;
+      }
+      .card-main .col-4 {
+        width: calc(33.33% - 40px);
+      }
+      figure img {
+        object-fit: cover;
+        height: auto;
+        width: 100%;
+        display: block;
+      }
+      .fa-solid {
+        position: absolute;
+        right: 20px;
+        top: 11px;
+        color: #9b9b9b;
+      }
+      header .col-6 {
+        position: relative;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <!-- header--start -->
     <header>
-        <div class="container">
-            <div class="row d-flex pad-t-b align-item ">
-                <div class="col-2">
-                    <picture class="d-block">
-                        <a href="#"><img src="images/logo.png" alt="logo" height="54" width="202" class="d-block"></a>
-                    </picture>
-                </div>
-                <div class="col-4">
-                    <ul class="d-flex justify-content-around">
-                        <li><a href="#" target="_top" class="fs-20 text-black fw-4" style="color: #FF0000 ; border-bottom: 1px solid ;">Home</a></li>
-                        <li><a href="#" target="_top" class="fs-20 text-black fw-4">Html</a></li>
-                        <li><a href="#" target="_top" class="fs-20 text-black fw-4">Css</a></li>
-                        <li><a href="#" target="_top" class="fs-20 text-black fw-4">Layout</a></li>
-                        <li><a href="#" target="_top" class="fs-20 text-black fw-4">Bootstarp</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 d-flex justify-content-end ">
-                    <input type="text" placeholder="Enter keyword, Item # or Part # " title="Enter keyword" class="w-50 fs-16 fw-4 " style="  border: 1px solid #B6B6B6 ; border-radius: 30px; padding: 10px 45px 10px 20px;">
-                    <i class="fa-solid fa-magnifying-glass fs-16"></i>
-               
-                </div>
-            </div>
+      <div class="container">
+        <div class="row d-flex pad-t-b align-item">
+          <div class="col-2">
+            <picture class="d-block">
+              <a href="#"
+                ><img
+                  src="images/logo.png"
+                  alt="logo"
+                  height="54"
+                  width="202"
+                  class="d-block"
+              /></a>
+            </picture>
+          </div>
+          <div class="col-4">
+            <ul class="d-flex justify-content-around">
+              <li>
+                <a
+                  href="#"
+                  target="_top"
+                  class="fs-20 text-black fw-4"
+                  style="color: #ff0000; border-bottom: 1px solid"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#" target="_top" class="fs-20 text-black fw-4">Html</a>
+              </li>
+              <li>
+                <a href="#" target="_top" class="fs-20 text-black fw-4">Css</a>
+              </li>
+              <li>
+                <a href="#" target="_top" class="fs-20 text-black fw-4"
+                  >Layout</a
+                >
+              </li>
+              <li>
+                <a href="#" target="_top" class="fs-20 text-black fw-4"
+                  >Bootstarp</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 d-flex justify-content-end">
+            <input
+              type="text"
+              placeholder="Enter keyword, Item # or Part # "
+              title="Enter keyword"
+              class="w-50 fs-16 fw-4"
+              style="
+                border: 1px solid #b6b6b6;
+                border-radius: 30px;
+                padding: 10px 45px 10px 20px;
+              "
+            />
+            <i class="fa-solid fa-magnifying-glass fs-16"></i>
+          </div>
         </div>
+      </div>
     </header>
     <!-- header-end -->
     <!-- banner-start -->
     <section>
-        <div class="container">
-            <div class="banner-section text-center"  style="padding: 80px 0; margin: 0 auto; width: 64%; ">
-                <h1 class="text-primory fs-48">Lorem ipsum</h1>
-                <p class="fs-20 text-primory" style="margin-top: 50px; text-align: justify;"><b>"Lorem ipsum dolor sit amet, consectetur adipiscing elit,</b>
-                     sed do eiusmod <sub>tempor incididunt</sub> ut labore <sup>et dolore </sup> magna
-                      aliqua. <span class="italic">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</span> consequat.
-                       Duis aute irure dolor in <del>reprehenderit</del> <span style="text-decoration: underline;">in voluptate velit</span>esse cillum dolore eu <small>fugiat nulla pariatur.</small> Excepteur sint occaecat cupidatat non proident,
-                        sunt in culpa qui officia deserunt mollit anim id <mark>est laborum.</mark> </p>
-            </div>
+      <div class="container">
+        <div
+          class="banner-section text-center"
+          style="padding: 80px 0; margin: 0 auto; width: 64%"
+        >
+          <h1 class="text-primory fs-48">Lorem ipsum</h1>
+          <p
+            class="fs-20 text-primory"
+            style="margin-top: 50px; text-align: justify"
+          >
+            <b>"Lorem ipsum dolor sit amet, consectetur adipiscing elit,</b> sed
+            do eiusmod <sub>tempor incididunt</sub> ut labore
+            <sup>et dolore </sup> magna aliqua.
+            <span class="italic"
+              >Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo</span
+            >
+            consequat. Duis aute irure dolor in <del>reprehenderit</del>
+            <span style="text-decoration: underline">in voluptate velit</span
+            >esse cillum dolore eu
+            <small>fugiat nulla pariatur.</small> Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id <mark>est laborum.</mark>
+          </p>
         </div>
+      </div>
     </section>
     <!-- banner-end -->
     <!-- card-start -->
     <section>
-        <div class="container" style="margin-bottom: 80px;">
-            <h2 class="fs-40 fw-7 text-primory text-center" style="padding: 20px 0 50px 0 ;">Lorem ipsum</h2>
-            <div class="d-flex card-main justify-content-between">
-                <div class="col-4">
-                    <ul>
-                        <li class="mb-20 text-secondary fs-20 fw-4">Lorem ipsum</li>
-                        <ol>
-                            <li class="fs-20 fw-7 mb-34">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod </li>
-                            <li class="fs-20 fw-7">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,  sediam nonummy nibh euismod </li>
-                        </ol>
-                    </ul>                    
-                </div>
-                <div class="col-4">
-                    <ul>
-                        <li class="mb-20 text-secondary fs-20 fw-4">Lorem ipsum</li>
-                        <ol style="list-style: upper-alpha; font-style: italic;">
-                            <li class="fs-20 fw-4 mb-34">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod </li>
-                            <li class="fs-20 fw-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,  sediam nonummy nibh euismod </li>
-                        </ol>
-                    </ul>                   
-                </div>
-                <div class="col-4">
-                    <ul>
-                        <li class="mb-20 text-secondary fs-20 fw-4">Lorem ipsum</li>
-                        <ol style="list-style: upper-roman;">
-                            <li class="fs-20 fw-4 text-sky-blue mb-34">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod </li>
-                            <li class="fs-20 fw-4 text-sky-blue">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,  sediam nonummy nibh euismod </li>
-                        </ol>
-                    </ul>                    
-                </div>
-            </div>         
+      <div class="container" style="margin-bottom: 80px">
+        <h2
+          class="fs-40 fw-7 text-primory text-center"
+          style="padding: 20px 0 50px 0"
+        >
+          Lorem ipsum
+        </h2>
+        <div class="d-flex card-main justify-content-between">
+          <div class="col-4">
+            <ul>
+              <li class="mb-20 text-secondary fs-20 fw-4">Lorem ipsum</li>
+              <ol>
+                <li class="fs-20 fw-7 mb-34">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh euismod
+                </li>
+                <li class="fs-20 fw-7">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                  sediam nonummy nibh euismod
+                </li>
+              </ol>
+            </ul>
+          </div>
+          <div class="col-4">
+            <ul>
+              <li class="mb-20 text-secondary fs-20 fw-4">Lorem ipsum</li>
+              <ol style="list-style: upper-alpha; font-style: italic">
+                <li class="fs-20 fw-4 mb-34">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh euismod
+                </li>
+                <li class="fs-20 fw-4">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                  sediam nonummy nibh euismod
+                </li>
+              </ol>
+            </ul>
+          </div>
+          <div class="col-4">
+            <ul>
+              <li class="mb-20 text-secondary fs-20 fw-4">Lorem ipsum</li>
+              <ol style="list-style: upper-roman">
+                <li class="fs-20 fw-4 text-sky-blue mb-34">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh euismod
+                </li>
+                <li class="fs-20 fw-4 text-sky-blue">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                  sediam nonummy nibh euismod
+                </li>
+              </ol>
+            </ul>
+          </div>
         </div>
+      </div>
     </section>
     <!-- card-end-->
     <!-- img-content-section -->
     <section>
-        <div class="container">
-            <h2 class="fs-40 fw-7 text-primory text-center" style="padding: 20px 0 50px 0 ;">Lorem ipsum</h2>
-            <div class="row d-flex flex-wrap align-item " style="max-width: 65%; padding: 50px; margin: 0 auto;">
-                <div class="col-6">
-                    <figure>
-                        <img src="images/room.png" alt="room-img" height="300" width="571">
-                       </figure>
-                </div>                
-                <div class="col-6" style="padding-left: 40px;">
-                    <h3 class="fs-30 text-dark fw-7 mb-20">Lorem ipsum</h3>
-                    <p class="fs-18 text-dark fw-4 mb-11">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt utlaoreet dolore magna aliquam erat volutpat.
-                    </p>
-                    <p class="fs-18 text-dark fw-4 mb-20">sed diam nonummy nibh euismod tincidunt utlaoreet dolore magna aliquam erat volutpat.
-                    </p>
-                  <a href="#" target="_top" class="text-secondary fs-20 fw-4" style="text-decoration: underline;">View More</a>
-                </div>                               
-                <div class="col-6" style=" padding-right: 40px;">
-                    <h3 class="fs-30 text-dark fw-7 mb-20">Lorem ipsum</h3>
-                    <p class="fs-18 text-dark fw-4 mb-11">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt utlaoreet dolore magna aliquam erat volutpat.
-                    </p>
-                    <p class="fs-18 text-dark fw-4 mb-20">sed diam nonummy nibh euismod tincidunt utlaoreet dolore magna aliquam erat volutpat.
-                    </p>
-                  <a href="#" target="_top" class="text-secondary fs-20 fw-4" style="text-decoration: underline;">View More</a>
-                </div>
-                <div class="col-6">
-                    <figure>
-                        <img src="images/room-1.png" alt="room-img" height="300" width="571">
-                       </figure>
-                </div> 
-            </div>
+      <div class="container">
+        <h2
+          class="fs-40 fw-7 text-primory text-center"
+          style="padding: 20px 0 50px 0"
+        >
+          Lorem ipsum
+        </h2>
+        <div
+          class="row d-flex flex-wrap align-item"
+          style="max-width: 65%; padding: 50px; margin: 0 auto"
+        >
+          <div class="col-6">
+            <figure>
+              <img
+                src="images/room.png"
+                alt="room-img"
+                height="300"
+                width="571"
+              />
+            </figure>
+          </div>
+          <div class="col-6" style="padding-left: 40px">
+            <h3 class="fs-30 text-dark fw-7 mb-20">Lorem ipsum</h3>
+            <p class="fs-18 text-dark fw-4 mb-11">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy nibh euismod tincidunt utlaoreet dolore magna aliquam erat
+              volutpat.
+            </p>
+            <p class="fs-18 text-dark fw-4 mb-20">
+              sed diam nonummy nibh euismod tincidunt utlaoreet dolore magna
+              aliquam erat volutpat.
+            </p>
+            <a
+              href="#"
+              target="_top"
+              class="text-secondary fs-20 fw-4"
+              style="text-decoration: underline"
+              >View More</a
+            >
+          </div>
+          <div class="col-6" style="padding-right: 40px">
+            <h3 class="fs-30 text-dark fw-7 mb-20">Lorem ipsum</h3>
+            <p class="fs-18 text-dark fw-4 mb-11">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy nibh euismod tincidunt utlaoreet dolore magna aliquam erat
+              volutpat.
+            </p>
+            <p class="fs-18 text-dark fw-4 mb-20">
+              sed diam nonummy nibh euismod tincidunt utlaoreet dolore magna
+              aliquam erat volutpat.
+            </p>
+            <a
+              href="#"
+              target="_top"
+              class="text-secondary fs-20 fw-4"
+              style="text-decoration: underline"
+              >View More</a
+            >
+          </div>
+          <div class="col-6">
+            <figure>
+              <img
+                src="images/room-1.png"
+                alt="room-img"
+                height="300"
+                width="571"
+              />
+            </figure>
+          </div>
         </div>
+      </div>
     </section>
     <!-- img-content-section-end -->
     <!-- footer -->
-    <footer style="padding: 25px 0; background-color: #F9F9F9;">
-        <h6 class="fs-20 fw-7 text-center mb-11">Radixweb</h6>
-        <address class="text-center fs-18 text-head" style="font-style: normal;">Ekyarth, B/H Nirma University, chharodi, Ahmedabad-382481, India.</address>
-
+    <footer style="padding: 25px 0; background-color: #f9f9f9">
+      <h6 class="fs-20 fw-7 text-center mb-11">Radixweb</h6>
+      <address class="text-center fs-18 text-head" style="font-style: normal">
+        Ekyarth, B/H Nirma University, chharodi, Ahmedabad-382481, India.
+      </address>
     </footer>
     <!-- footer-end -->
-
-</body>
+  </body>
 </html>
